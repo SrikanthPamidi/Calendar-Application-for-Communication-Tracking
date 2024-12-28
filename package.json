@@ -1,0 +1,47 @@
+{
+  "name": "react-typescript",
+  "version": "1.0.0",
+  "description": "React and TypeScript example starter project",
+  "keywords": [
+    "typescript",
+    "react",
+    "starter"
+  ],
+  "main": "src/index.tsx",
+  "dependencies": {
+    "loader-utils": "3.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-scripts": "5.0.1",
+    "react-big-calendar": "1.17.1",
+    "date-fns": "4.1.0",
+    "moment": "2.30.1",
+    "react-calendar": "5.1.0",
+    "fullcalendar": "6.1.15",
+    "@types/react-beautiful-dnd": "13.1.8",
+    "react-beautiful-dnd": "13.1.1",
+    "@types/react-big-calendar": "1.16.0",
+    "react-big-calendar-like-google": "0.0.3",
+    "chart.js": "4.4.7",
+    "react-chartjs-2": "5.2.0",
+    "recharts": "2.15.0",
+    "react-router-dom": "7.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "18.2.38",
+    "@types/react-dom": "18.2.15",
+    "typescript": "4.4.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

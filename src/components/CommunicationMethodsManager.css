@@ -1,0 +1,33 @@
+.methods-manager {
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.methods-manager form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.methods-manager ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methods-manager li {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.methods-manager li:hover {
+  background: #f0f0f0;
+}

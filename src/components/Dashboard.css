@@ -1,0 +1,77 @@
+/* src/components/Dashboard.css */
+.dashboard {
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+table th,
+table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.status {
+  font-weight: bold;
+}
+
+.status.red {
+  background-color: #ffcccc; /* Light red for overdue */
+  color: black; /* Text color set to black for better contrast */
+}
+
+.status.yellow {
+  background-color: #ffffcc; /* Light yellow for due today */
+  color: black; /* Text color set to black for better contrast */
+}
+
+.status.green {
+  background-color: #98fb98; /* Green for future communication */
+  color: white;
+}
+
+.company-management {
+  margin-top: 30px;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+form input,
+form textarea,
+form button {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #2870a7;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #218838;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
