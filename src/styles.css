@@ -1,0 +1,237 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f7f9fc;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* Header Styling */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  header h1 {
+    font-size: 24px;
+  }
+  
+  header .notification {
+    font-size: 16px;
+    padding: 5px 10px;
+    background: #fff;
+    color: #4facfe;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  header .notification:hover {
+    background: #e0f7fa;
+  }
+  
+  /* Calendar View */
+  .calendar-view {
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .calendar-header {
+    padding: 15px;
+    background: #4facfe;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    padding: 10px;
+    background-color: #e7eefb;
+  }
+  
+  .calendar-day {
+    position: relative;
+    min-height: 100px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .calendar-day:hover {
+    transform: translateY(-5px);
+    background: #f5faff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .day-number {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4facfe;
+    margin-bottom: 5px;
+  }
+  
+  .event {
+    background: #ffeb3b;
+    color: #333;
+    padding: 3px 8px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 2px 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .event:hover {
+    background: #ffc107;
+    color: #000;
+  }
+  
+  /* Dashboard */
+  .dashboard {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard h2 {
+    margin-bottom: 20px;
+    color: #4facfe;
+    text-align: center;
+  }
+  
+  .dashboard-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .dashboard-table th,
+  .dashboard-table td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .dashboard-table th {
+    background: #4facfe;
+    color: #fff;
+  }
+  
+  .dashboard-table tr:hover {
+    background: #e7eefb;
+  }
+  
+  .status-red {
+    background: #ff7043;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .status-yellow {
+    background: #ffc107;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .status-green {
+    background: #66bb6a;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Notifications Section */
+  .notifications {
+    margin: 20px 0;
+    padding: 15px;
+    background: #e0f7fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #00796b;
+  }
+  
+  .notifications .notification-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #00796b;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .notifications .notification-item:hover {
+    background: #b2dfdb;
+    color: #004d40;
+  }
+  
+  /* Buttons */
+  button {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #4facfe;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #007bff;
+  }
+  
+  button:disabled {
+    background: #d3d3d3;
+    cursor: not-allowed;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .calendar-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .dashboard-table th,
+    .dashboard-table td {
+      font-size: 14px;
+    }
+  }
+  

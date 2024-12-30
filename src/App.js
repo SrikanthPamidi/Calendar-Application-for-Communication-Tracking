@@ -5,7 +5,7 @@ import Dashboard from "./components/Dashboard"; // Import the Dashboard componen
 function App() {
   return (
     <div className="App">
-      <h1>Communication Dashboard</h1>
+      <h1>Communication Tracking Application</h1>
       <Dashboard /> {/* Include the Dashboard component */}
     </div>
   );
